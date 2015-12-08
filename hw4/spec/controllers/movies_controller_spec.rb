@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 describe MoviesController do
-
+fixtures :movies
     before :each do
-      @fake_movie = FactoryGirl::create(:movie)
-      @fake_movie2 = FactoryGirl::create(:movie)
-      @fake_movie3 = FactoryGirl::create(:movie)
+      @fake_movie = movies(:movie)
+      @fake_movie2 = movies(:movie)
+      @fake_movie3 = movies(:movie)
       @fake_results = [@fake_movie3, @fake_movie2]
-      @empty_dir_movie = FactoryGirl::create(:no_dir_movie)
+      @empty_dir_movie = movies(:no_dir_movie)
     end
 
  describe 'updating director info' do

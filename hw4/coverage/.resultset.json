@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/sbstn/Desktop/hw-bdd-tdd-cycle/rottenpotatoes/app/models/movie.rb": [
+      "/home/sbstn/Desktop/hw4/hw4/app/models/movie.rb": [
         1,
         1,
         7,
@@ -12,7 +12,7 @@
         null,
         null
       ],
-      "/home/sbstn/Desktop/hw-bdd-tdd-cycle/rottenpotatoes/app/controllers/movies_controller.rb": [
+      "/home/sbstn/Desktop/hw4/hw4/app/controllers/movies_controller.rb": [
         1,
         null,
         1,
@@ -88,16 +88,16 @@
         null,
         null
       ],
-      "/home/sbstn/Desktop/hw-bdd-tdd-cycle/rottenpotatoes/app/controllers/application_controller.rb": [
+      "/home/sbstn/Desktop/hw4/hw4/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/home/sbstn/Desktop/hw-bdd-tdd-cycle/rottenpotatoes/app/helpers/application_helper.rb": [
+      "/home/sbstn/Desktop/hw4/hw4/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/sbstn/Desktop/hw-bdd-tdd-cycle/rottenpotatoes/app/helpers/movies_helper.rb": [
+      "/home/sbstn/Desktop/hw4/hw4/app/helpers/movies_helper.rb": [
         1,
         null,
         1,
@@ -106,7 +106,7 @@
         null
       ]
     },
-    "timestamp": 1448845170
+    "timestamp": 1449540162
   },
   "RSpec": {
     "coverage": {
@@ -192,6 +192,6 @@
         null
       ]
     },
-    "timestamp": 1448848085
+    "timestamp": 1449540153
   }
 }
