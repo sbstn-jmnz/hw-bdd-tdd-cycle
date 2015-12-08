@@ -14,7 +14,7 @@ Background: movies in database
   | THX-1138     | R      | George Lucas |   1971-03-11 |
  
 Scenario: add director to existing movie
-  When I go to the edit page for "Alien"
+  When I go to edit page for "Alien"
   And  I fill in "Director" with "Ridley Scott"
   And  I press "Update Movie Info"
   Then the director of "Alien" should be "Ridley Scott"
@@ -32,3 +32,4 @@ Scenario: can't find similar movies if we don't know director (sad path)
   When  I follow "Find Movies With Same Director"
   Then  I should be on the home page
   And   I should see "'Alien' has no director info"
+

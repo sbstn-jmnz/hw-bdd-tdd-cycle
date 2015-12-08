@@ -1,5 +1,11 @@
+#This is a declarative step for populating the DB with Movies
+
 Given(/^the following movies exist:$/) do |movies_table|
   movies_table.hashes.each do |movie|
+    #debugger
+    # movies_table is an in memory representacion of the table
+    # in the .feature file
+    # Create the movies in the test_db. They are used in scenarios  
     Movie.create(movie)
   end
 end
@@ -19,6 +25,11 @@ end
 
 Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
   expect page.body =~ /#{e1}.+#{e2}/m
+end
+
+Then /I should see all the movies/ do 
+  # Make sure that all the movies in the app are visible in the table
+  page.all('table#movies tbody tr', :count => 10)
 end
 
 When /I (un)?check the following ratings: (.*)/ do |uncheck, rating_list|
